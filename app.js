@@ -17,7 +17,8 @@ function initialize(){
         "online",
         function(){
             document.getElementById("status").innerHTML="Online";
-        }
+        },
+        false
     )
     document.body.addEventListener(
         "offline",
