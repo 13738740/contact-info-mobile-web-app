@@ -31,7 +31,7 @@ function retrieveContacts(){
     const xhr = new XMLHttpRequest();
     const url= "contacts.json";
 
-    WaveShaperNode.onreadystatechange = function(){
+    xhr.onreadystatechange = function(){
         if(xhr.readState ==4){
             var contacts =JSON.parse(xhr.response).contacts;
             displayContacts(contacts);
